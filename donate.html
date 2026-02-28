@@ -3,3 +3,50 @@
 <!--Instrument -->
 <!--Condition -->
 <!--Money -->
+<head>
+    <title>Name</title>
+    <style>
+        .navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: space-between;
+            top: 0px;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+        .nav-list li {
+            margin-right: 20px;
+        }
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./questions.html">Register</a></li>
+            <li><a href="./donate.html">Donate</a></li>
+        </ul>
+    </nav>
+    <form>
+        <p>You can donate your old instruments to us so that we can give them back to the community to learn music.</p>
+         <label for="Instrument">What Type of Instrument is it?</label>
+        <input type="Text" id="Instrument" name="Instrument" value="Instrument" />
+       <br></br>
+    </form>
+    <form>
+        <p>Contact Information</p>
+        <label for="DonateName">What is your full name?</label>
+        <input type="text" id="DonateName" name="DonateName" value="Name" /><br></br>
+         <label for="DonatePhone">What is your phone number?</label>
+        <input type="text" id="DonatePhone" name="DonatePhone" value="Phone Number" /><br></br>
+        <label for="DonateEmail">What is your Email?</label>
+        <input type="text" id="DonateEmail" name="DonateEmail" value="Email" /><br></br>
+    </form>
+</body>
