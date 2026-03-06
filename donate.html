@@ -1,3 +1,5 @@
+<!doctype html>
+
 <!-- Donations -->
 <!-- Form to donate instruments -->
 <!--Instrument -->
@@ -34,18 +36,30 @@
             <li><a href="./donate.html">Donate</a></li>
         </ul>
     </nav>
-    <form>
         <p>You can donate your old instruments to us so that we can give them back to the community to learn music.</p>
          <label for="Instrument">What Type of Instrument is it?</label>
         <input type="Text" id="Instrument" name="Instrument" value="Instrument" />
        <br></br>
+       <label for="Condition">What Condition is the Instrument in?</label>
+       <select id="Condition" name="Condition"">
+           <option value="great">Great</option>
+           <option value="good">Good</option>
+           <option value="okay">okay</option>
+           <option value="poor">poor</option>
+           <option value="bad">bad</option>
+       </select>
+       <br></br>
+       <form>
+           <label for="OCondition">Optionally, could you please describe the condition of the instrument in more details?</label>
+           <input type="text" id="OCondition" name="OCondition" value="Condition" /><br></br>
+       </form>
     </form>
     <form>
         <p>Contact Information</p>
         <label for="DonateName">What is your full name?</label>
         <input type="text" id="DonateName" name="DonateName" value="Name" /><br></br>
          <label for="DonatePhone">What is your phone number?</label>
-        <input type="text" id="DonatePhone" name="DonatePhone" value="Phone Number" /><br></br>
+        <input type="tel" id="DonatePhone" name="DonatePhone" value="Phone Number" /><br></br>
         <label for="DonateEmail">What is your Email?</label>
         <input type="text" id="DonateEmail" name="DonateEmail" value="Email" /><br></br>
     </form>

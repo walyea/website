@@ -1,4 +1,6 @@
 <!-- Place where people fiilout a form to regisiter for instruments-->
+<!doctype html>
+
 <head>
     <title>Name</title>
     <style>
@@ -19,6 +21,13 @@
         .nav-list li:last-child {
             margin-right: 0;
         }
+        #StudentSchool {
+          display: none;
+        }
+
+        #StudentY:checked ~ #StudentSchool {
+          display: block;
+        }
     </style>
 </head>
 <body>
@@ -35,17 +44,17 @@
     </p>
     <form>
         <p>Are you a Student at Arlington Public Schools</p>
-        <input type="radio" id="StudentY" name="StudentY" value="Yes" />
+        <input type="checkbox" id="StudentY" name="StudentY" value="Yes" />
         <label for="StudentY">Yes</label><br></br>
-        <input type="radio" id="StudentN" name="StudentN" value="No" />
-        <label for="StudentN">No</label>
+        <label for="StudentSchool" id="StudentSchool">What school do you go to?</label>
+        <input type="text" id="StudentSchool" name="StudentSchool" value="School" /><br></br>
     </form>
     <form>
         <p>Contact Information</p>
         <label for="StudentName">What is your full name?</label>
         <input type="text" id="StudentName" name="StudentName" value="Name" /><br></br>
          <label for="StudentPhone">What is your or your parent's phone number?</label>
-        <input type="text" id="StudentPhone" name="StudentPhone" value="Phone Number" /><br></br>
+        <input type="del" id="StudentPhone" name="StudentPhone" value="Phone Number" /><br></br>
         <label for="StudentEmail">If you have a phone number, what is it?</label>
         <input type="text" id="StudentEmail" name="StudentEmail" value="Student's Email" /><br></br>
         <label for="ParentEmail">What is your parent's email?</label>
@@ -59,9 +68,9 @@
     </form>
     <form>
         <p>Do you want/need help practicing</p>
-        <input type="radio" id="StudentPY" name="StudentPY" value="Yes" />
+        <input type="checkbox" id="StudentPY" name="StudentPY" value="Yes" />
         <label for="StudentPY">Yes</label><br></br>
-        <input type="radio" id="StudentPN" name="StudentPN" value="No" />
+        <input type="checkbox" id="StudentPN" name="StudentPN" value="No" />
         <label for="StudentPN">No</label>
     </form>
 </body>
